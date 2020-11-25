@@ -28,7 +28,7 @@ const style = StyleSheet.create ({
         color: colors.base
     },
     imgbox: {
-        flex: 1
+        
     },
     text: {
         
