@@ -5,8 +5,8 @@ import style from './style';
 const Item = ({navigation, category}) => {
 
     const openDetails = () => {
-        navigation.navigate('CategoryList', {
-            category: category
+        navigation.navigate('ProductList', {
+            categoryId: category.id,
         })
     }    
 

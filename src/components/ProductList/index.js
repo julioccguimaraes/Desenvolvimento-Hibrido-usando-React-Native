@@ -4,7 +4,18 @@ import style from './style';
 import Product from './Product';
 import dataJson from '../../data.json';
 
-const ProductList = ({ navigation }) => {
+const ProductList = ({ route, navigation }) => {
+/*
+    let catId;
+
+    const { categoryId } = route.params;
+
+    if(!categoryId) {
+        catId = 3;
+    } else {
+        catId = category.id;
+    }
+*/
 
     // a categoria de id 3 será a destaque na Home
     const featureProducts =  dataJson.find(item => item.id === 3);

@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import BottomTab from '../components/Tab';
 import { colors } from '../styles';
 import ProductDetails from '../components/ProductDetails'
+
 const Stack  = createStackNavigator();
 
 const HomeStack = () => {
