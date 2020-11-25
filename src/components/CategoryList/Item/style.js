@@ -1,5 +1,4 @@
 import { StyleSheet, Dimensions } from 'react-native';
-import { block } from 'react-native-reanimated';
 import { measures, colors, fonts } from '../../../styles';
 
 const { width } = Dimensions.get('window')
@@ -23,16 +22,10 @@ const style = StyleSheet.create ({
         color: colors.light
     },
     items: {
-        fontSize: fonts.bigger,
+        fontSize: fonts.big,
         fontWeight: 'bold',
         color: colors.base
-    },
-    imgbox: {
-        
-    },
-    text: {
-        
-    }    
+    }  
 })
 
 export default style;

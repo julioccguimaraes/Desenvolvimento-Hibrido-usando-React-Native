@@ -19,7 +19,7 @@ const Item = ({navigation, category}) => {
                     </View>
                     <View style={style.text}>
                         <Text style={style.description}>{category.description}</Text>
-                        <Text style={style.price}>{category.items} items(s)</Text>
+                        <Text style={style.items}>{category.items} items(s)</Text>
                     </View>
                 </View>
             </TouchableOpacity>
