@@ -5,20 +5,11 @@ import Product from './Product';
 import dataJson from '../../data.json';
 
 const ProductList = ({ route, navigation }) => {
-/*
-    let catId;
-
-    const { categoryId } = route.params;
-
-    if(!categoryId) {
-        catId = 3;
-    } else {
-        catId = category.id;
-    }
-*/
+    
+    const { categoryId } = !!route && !!route.params ? route.params : {categoryId: 3};
 
     // a categoria de id 3 será a destaque na Home
-    const featureProducts =  dataJson.find(item => item.id === 3);
+    const featureProducts =  dataJson.find(item => item.id === categoryId);
 
     const [products, setProducts] = useState(featureProducts.products);
 
