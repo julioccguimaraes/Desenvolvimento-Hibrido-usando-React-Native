@@ -4,7 +4,6 @@ import BottomTab from '../components/Tab';
 import { colors } from '../styles';
 import ProductDetails from '../components/ProductDetails'
 import ProductList from '../components/ProductList'
-import CategoryList from '../components/CategoryList'
 
 const Stack  = createStackNavigator();
 
